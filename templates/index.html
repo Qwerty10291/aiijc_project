@@ -22,16 +22,16 @@
     <main>
         <div class="column-left">
             <div class="upLoadArea">
-                <form id="upload-container" method="POST" action="send.php">
-                    <img id="upload-image" src="img/Group%201.png">
+                <form id="upload-container" method="POST" action="/upload">
+                    <img id="upload-image" src="static/img/Group%201.png">
                     <div>
                         <input id="file-input" type="file" name="file" multiple>
                         <label for="file-input">Выберите файл</label>
                         <span>или перетащите его сюда</span>
+                        <button type="send">отправить</button>
                     </div>
                 </form>
             </div>
-            <button class="send">Отправить</button>
         </div>
         <column-right>
             <div class="title">Результаты анализа по фотографии</div>
