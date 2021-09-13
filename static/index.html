@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Masha</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/a2e1ab6caf.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,200&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="title">Нейронка Маша</div>
+        <div class="title-small">Проверю ваши фоточки</div>
+    </header>
+    <main>
+        <div class="column-left">
+            <div class="upLoadArea">
+                <form id="upload-container" method="POST" action="send.php">
+                    <img id="upload-image" src="img/Group%201.png">
+                    <div>
+                        <input id="file-input" type="file" name="file" multiple>
+                        <label for="file-input">Выберите файл</label>
+                        <span>или перетащите его сюда</span>
+                    </div>
+                </form>
+            </div>
+            <button class="send">Отправить</button>
+        </div>
+        <column-right>
+            <div class="title">Результаты анализа по фотографии</div>
+            <div class="output">
+                <div class="textOutput">Тут будут результаты анализа по фотографии после того,как вы загрузите файл нужного формата и отправите его мне</div>
+            </div>
+            <div class="feedBack">
+                <div class="feedBackTitle">Оцените работу нашей нейросети</div>
+                <div class="feedBackMark">
+                    <i class="fa fa-thumbs-up fa-2x like" aria-hidden="true"></i>
+                    <i class="fa fa-thumbs-up fa-2x dislike" aria-hidden="true"></i>
+                </div>
+                
+            </div>
+            <button class="buttonRight">Попробовать снова</button>
+        </column-right>
+    </main>
+</body></html>
