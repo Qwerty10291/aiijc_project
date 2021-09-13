@@ -1,0 +1,136 @@
+body {
+    background-color: #343434;
+    background-image: url(img/Spiral%204.png);
+    background-position: center;
+    padding: 0 10%;
+}
+header {
+    text-align: center;
+    font-family:Montserrat;
+    color: white;
+}
+header .title {
+    font-weight: 700;
+    font-size: 200%;
+}
+header .title-small {
+    font-style: italic;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+main .column-left {
+    text-align: center;
+}
+main .upLoadArea {
+}
+#upload-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 400px;
+	height: 400px;
+	background-color: #282828;
+	font-family: 'Segoe UI';
+	color: #1f3c44;
+}
+
+#upload-container img {
+	width: 30%;
+	margin-bottom: 20px;
+	user-select: none;
+}
+
+#upload-container label {
+    font-family: Roboto;
+    color: #989898;
+}
+main span {
+     font-family: Roboto;
+    color: #989898;
+}
+#upload-container label:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#upload-container div {
+	position: relative;
+	z-index: 10;
+}
+
+#upload-container input[type=file] {
+	position: absolute;
+	visibility: hidden;
+}
+main label {
+    font-weight: bolder;
+    font-size: 110%;
+}
+
+main .send {
+    padding: 3% 30%;
+    background: linear-gradient(91.6deg, #00A3FF 0.98%, #6100FF 94.03%);
+    border: 0;
+    border-radius: 50px; 
+    color: white;
+    font-family: Montserrat;
+    margin-top: 5%;
+    cursor: pointer;
+}
+main column-right {
+    font-family: Montserrat;
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+main .title {
+    font-weight: regular;
+    font-size: 200%;
+}
+main .output {
+     background-color: #282828;
+    padding: 5%;
+    margin-top: 4%;
+    padding: 15% 10%;
+}
+main .output .outputImage {
+    position: relative;
+    right: 5%;
+    bottom: 5%;
+}
+main .textOutput {
+}
+main .feedBack {
+    margin-top: 3%;
+    background-color: #282828;
+    padding: 5%;
+    width: 50%;
+    margin-left: 20%;
+}
+main .feedBackTitle {
+}
+main .feedBackMark {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-around;
+    width: 40%;
+    margin-left: 30%;
+}
+main .feedBackMark .fa {
+    cursor: pointer;
+}
+.buttonRight {
+       padding: 2% 15%;
+    background: linear-gradient(91.6deg, #00A3FF 0.98%, #6100FF 94.03%);
+    border: 0;
+    border-radius: 50px; 
+    color: white;
+    font-family: Montserrat;
+    margin-top: 5%;
+    cursor: pointer;
+}
