@@ -1,11 +1,11 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/images')
+@app.route('/upload', methods=['POST'])
 def image_handler():
-    print(request.files)
-    return 'ok'
+    print(len(request.files))
+    return jsonify([{'status': 'OK', 'result': 'тут будет тестовый результат', 'name': name, 'filename': file.filename} for name, file in request.files.items()])
 
 @app.route('/')
 def index():
